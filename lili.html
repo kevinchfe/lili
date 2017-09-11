@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+    /**
+     *
+     * @param begin_date   string    开始日期
+     * @param end_date     string    结束日期
+     * @returns {number}
+     */
+    var substractDate = function() {
+        var begin_date = new Date('2016-07-23');
+        var begin_date = begin_date.getTime();
+        var end_date = new Date();
+        var end_date = end_date.getTime();
+
+        return Math.floor(Math.abs(end_date - begin_date) / 1000 / 60 / 60 /24 + 1);
+    }
+    var date = substractDate();
+    console.log(date);
+
+</script>
+
+
+</body>
+</html>
